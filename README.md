@@ -4,8 +4,6 @@ A simple command-line expense tracker built in Python, following software develo
 
 Track your expenses, view summaries, and manage spending — all from your terminal.
 
----
-
 ## Features
 
 - Add expenses with descriptions, amounts, and dates
@@ -16,12 +14,10 @@ Track your expenses, view summaries, and manage spending — all from your termi
 - Persistent storage using JSON
 - Automatic backup on file corruption
 
----
-
-## Architecture
+## File Structure
 
 This project uses a modular structure:
-
+```bash
 expense-tracker-cli/
 │
 ├── data/
@@ -40,10 +36,9 @@ expense-tracker-cli/
 ├── requirements.txt # Project requirements
 ├── LICENSE # Project license
 └── README.md # Project documentation
+```
 
----
-
-## 🖥️ Usage
+## Usage
 
 Run the CLI from the terminal:
 
@@ -89,13 +84,11 @@ python main.py summary --month 6
 
 ```
 
----
-
 ## Example Output
 
 ```bash
 # python main.py list
-------------------------------------
+------------------------------------            
 ID  Date        Description   Amount
 ------------------------------------
 1   2025-06-20  Groceries    ₱120.00
@@ -105,14 +98,10 @@ ID  Date        Description   Amount
 
 ```
 
----
-
 ## Requirements
 
 - Python 3.8+
 - No external libraries required (uses built-in modules only)
-
----
 
 ## Installation
 
@@ -133,25 +122,17 @@ python main.py [command]
 
 3. First run will auto-create the JSON file (`expenses.json`)
 
----
-
 ## File Storage
 
 Expenses are saved in `expenses.json`. If the file is corrupted, a backup will be created as `expenses_backup_TIMESTAMP.json.`
-
----
 
 ## Testing
 
 Coming soon — unit tests will be added in tests/ for core logic and file handling.
 
----
-
 ## License
 
 This project is licensed under the MIT License.
-
----
 
 ## Future Improvements
 
@@ -159,8 +140,6 @@ This project is licensed under the MIT License.
 - Categorize expenses
 - Set monthly budgets
 - Add unit tests with pytest
-
----
 
 ## Project Source
 
