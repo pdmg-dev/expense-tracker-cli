@@ -1,6 +1,6 @@
 # CLI Expense Tracker
 
-A simple command-line expense tracker built in Python, following software development best practices and modular architecture.
+A simple command-line expense tracker application built in Python.
 
 Track your expenses, view summaries, and manage spending — all from your terminal.
 
